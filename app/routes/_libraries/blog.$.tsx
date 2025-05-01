@@ -18,7 +18,7 @@ const fetchBlogPost = createServerFn({ method: 'GET' })
       throw new Error('Invalid docs path')
     }
 
-    const filePath = `app/blog/${docsPath}.md`
+    const filePath = `app/blog/zh-hans/${docsPath}.md`
 
     const post = allPosts.find((post) => post.slug === docsPath)
 

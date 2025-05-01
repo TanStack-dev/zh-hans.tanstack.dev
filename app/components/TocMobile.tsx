@@ -26,7 +26,7 @@ export function TocMobile({ headings }: TocMobileProps) {
           aria-expanded={isOpen}
         >
           <span>{isOpen ? <FaCaretDown /> : <FaCaretRight />}</span>
-          <span>On this page</span>
+          <span>本页内容</span>
         </summary>
         <div className="px-2 py-2">
           <ul className="list-none grid gap-2">
