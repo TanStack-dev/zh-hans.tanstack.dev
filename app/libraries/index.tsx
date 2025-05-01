@@ -119,10 +119,10 @@ export const librariesByGroup = {
 }
 
 export const librariesGroupNamesMap = {
-  app: 'Application Building',
-  state: 'Data and State Management',
-  headlessUI: 'Headless UI',
-  other: 'Other',
+  app: '应用框架',
+  state: '状态管理',
+  headlessUI: '无头UI组件',
+  other: '其他工具',
 }
 
 export function getLibrary(id: string) {

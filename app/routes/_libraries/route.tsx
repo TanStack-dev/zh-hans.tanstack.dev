@@ -152,21 +152,21 @@ function LibrariesLayout() {
       </div>
       {[
         {
-          label: 'Support',
+          label: '支持',
           icon: <MdSupport />,
           to: '/support',
         },
         {
-          label: 'Learn',
+          label: '学习',
           icon: <MdLibraryBooks />,
           to: '/learn',
         },
         {
           label: (
             <span className="flex items-center gap-2">
-              Stats
+              统计
               <span className="text-xs bg-transparent text-transparent bg-clip-text bg-gradient-to-r border border-cyan-600 from-blue-500 to-cyan-500 font-bold px-1 rounded">
-                BETA
+                测试版
               </span>
             </span>
           ),
@@ -180,12 +180,12 @@ function LibrariesLayout() {
           target: '_blank',
         },
         {
-          label: 'Merch',
+          label: '周边',
           icon: <FaTshirt />,
           to: 'https://cottonbureau.com/people/tanstack',
         },
         {
-          label: 'Blog',
+          label: '博客',
           icon: <CgMusicSpeaker />,
           to: '/blog',
         },
@@ -195,7 +195,7 @@ function LibrariesLayout() {
           to: 'https://github.com/tanstack',
         },
         {
-          label: 'Ethos',
+          label: '理念',
           icon: <BiSolidCheckShield />,
           to: '/ethos',
         },

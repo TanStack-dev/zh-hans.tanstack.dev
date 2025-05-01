@@ -19,9 +19,13 @@ const fetchBlogPost = createServerFn({ method: 'GET' })
       throw new Error('Invalid docs path')
     }
 
-    const filePath = `app/blog/${docsPath}.md`
+    const filePath = `app/blog/zh-hans/${docsPath}.md`
 
-    const file = await fetchRepoFile('tanstack/tanstack.com', 'main', filePath)
+    const file = await fetchRepoFile(
+      'tanstack-dev/zh-hans.tanstack.dev',
+      'main',
+      filePath
+    )
 
     if (!file) {
       throw notFound()

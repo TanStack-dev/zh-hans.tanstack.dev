@@ -6,7 +6,7 @@ export const GITHUB_ORG = 'TanStack'
 
 export const octokit = new Octokit({
   auth: process.env.GITHUB_AUTH_TOKEN,
-  userAgent: 'TanStack.com',
+  userAgent: 'TanStack.dev',
 })
 
 export const graphqlWithAuth = graphql.defaults({
