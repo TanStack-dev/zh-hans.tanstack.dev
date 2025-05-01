@@ -4,7 +4,7 @@ import { BiBookAlt } from 'react-icons/bi'
 import { VscWand } from 'react-icons/vsc'
 import { twMerge } from 'tailwind-merge'
 
-const repo = 'tanstack/config'
+const repo = 'tanstack-dev/config'
 
 const textStyles = 'text-gray-700 dark:text-gray-500'
 
@@ -12,9 +12,10 @@ export const configProject = {
   id: 'config',
   name: 'TanStack Config',
   cardStyles: `shadow-xl shadow-slate-700/20 dark:shadow-lg dark:shadow-slate-500/30 text-slate-500 border-2 border-transparent hover:border-current`,
+  docsRoot: 'docs/zh-hans',
   to: '/config',
-  tagline: `Configuration and tools for publishing and maintaining high-quality JavaScript packages`,
-  description: `The build and publish utilities used by all of our projects. Use it if you dare!`,
+  tagline: `用于发布和维护高质量 JavaScript 包的配置和工具`,
+  description: `我们所有项目使用的构建和发布工具。如果你敢用的话！`,
   ogImage: 'https://github.com/tanstack/config/raw/main/media/repo-header.png',
   badge: undefined,
   bgStyle: 'bg-slate-500',
@@ -30,7 +31,7 @@ export const configProject = {
   menu: [
     {
       icon: <BiBookAlt />,
-      label: 'Docs',
+      label: '文档',
       to: '/config/latest/docs',
     },
     {
@@ -41,53 +42,45 @@ export const configProject = {
   ],
   featureHighlights: [
     {
-      title: 'Intuitive Configuration',
+      title: '直观的配置',
       icon: <VscWand className="text-gray-400" />,
       description: (
         <div>
-          TanStack Config offers a seamless and intuitive configuration
-          management system that simplifies the process of building and
-          publishing high-quality JavaScript packages. TanStack Config{' '}
+          TanStack Config
+          提供了一个无缝且直观的配置管理系统，简化了构建和发布高质量 JavaScript
+          包的过程。TanStack Config{' '}
           <span className={twMerge('font-semibold', textStyles)}>
-            streamlines the configuration process, allowing developers to focus
-            on writing code
+            简化了配置过程，让开发者能够专注于编写代码
           </span>{' '}
-          without the hassle of intricate setup procedures.
+          ，而不必为复杂的设置程序烦恼。
         </div>
       ),
     },
     {
-      title: 'Vite-Powered Builds',
+      title: 'Vite 驱动的构建',
       icon: <FaBolt className="text-gray-500" />,
       description: (
         <div>
-          TanStack Config's build configuration harnesses the Vite ecosystem.
-          Customize and extend your build workflows with ease, tailoring them to
-          meet the unique requirements of your project.{' '}
+          TanStack Config 的构建配置利用了 Vite
+          生态系统。轻松定制和扩展您的构建工作流程，使其满足项目的独特需求。{' '}
           <span className={twMerge('font-semibold', textStyles)}>
-            Whether you need advanced optimizations, pre-processors, or other
-            specialized tools,
+            无论您需要高级优化、预处理器，还是其他专业工具，
           </span>{' '}
-          TanStack Config provides a robust foundation for crafting a build
-          pipeline that suits your specific needs.
+          TanStack Config 都为打造满足您特定需求的构建管道提供了强大的基础。
         </div>
       ),
     },
     {
-      title: 'Effortless Publication',
+      title: '轻松发布',
       icon: <FaCogs className="text-gray-700" />,
       description: (
         <div>
-          Say goodbye to the complexities of code publishing. This package
-          provides tools designed to automate the publication of your projects.
-          Developers can effortlessly publish updates, manage versioning, and
-          release on npm and GitHub.{' '}
+          告别代码发布的复杂性。该包提供了设计用于自动化项目发布的工具。开发者可以轻松发布更新、管理版本和在
+          npm 和 GitHub 上发布。{' '}
           <span className={twMerge('font-semibold', textStyles)}>
-            TanStack Config takes care of the tedious aspects of package
-            publishing,
+            TanStack Config 负责包发布的繁琐方面，
           </span>{' '}
-          empowering developers to share their work with the community
-          efficiently.
+          使开发者能够高效地与社区分享他们的工作。
         </div>
       ),
     },

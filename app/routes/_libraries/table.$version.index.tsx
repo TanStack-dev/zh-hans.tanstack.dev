@@ -56,23 +56,23 @@ export default function TableVersionIndex() {
             lg:text-5xl lg:max-w-2xl"
         >
           <span className="underline decoration-dashed decoration-yellow-500 decoration-3 underline-offset-2">
-            Headless
+            无头
           </span>{' '}
-          UI for building powerful tables & datagrids
+          UI 用于构建强大的表格和数据网格
         </h2>
         <p
           className="text opacity-90 max-w-sm
             lg:text-xl lg:max-w-2xl"
         >
-          Supercharge your tables or build a datagrid from scratch for TS/JS,
-          React, Vue, Solid, Svelte & Lit while retaining 100% control over
-          markup and styles.
+          为 TS/JS、React、Vue、Solid、Svelte 和 Lit
+          增强您的表格功能或从头构建数据网格， 同时保持对标记和样式的 100%
+          控制。
         </p>
         <Link
           to="./docs/introduction/"
           className={`py-2 px-4 bg-blue-500 rounded text-white uppercase font-extrabold`}
         >
-          Get Started
+          开始使用
         </Link>
       </div>
 
@@ -81,38 +81,37 @@ export default function TableVersionIndex() {
       <div className="px-4 sm:px-6 lg:px-8 mx-auto">
         <div className=" sm:text-center pb-16">
           <h3 className="text-3xl text-center mx-auto leading-tight font-extrabold tracking-tight sm:text-4xl lg:leading-none mt-2">
-            Framework Agnostic & Feature Rich
+            框架无关 & 功能丰富
           </h3>
           <p className="mt-4 text-xl max-w-3xl mx-auto leading-7 opacity-60">
-            TanStack Table's API and engine are highly modular and
-            framework-independent while still prioritizing ergonomics. Behold,
-            the obligatory feature-list:
+            TanStack Table 的 API
+            和引擎高度模块化且与框架无关，同时仍然优先考虑易用性。看看这些必备功能列表：
           </p>
         </div>
         <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-4  mx-auto">
           {[
-            'Lightweight (10 - 15kb)',
-            'Tree-Shaking',
-            'Headless',
-            'Cell Formatters',
-            'Auto-managed internal state',
-            'Opt-in fully controlled state',
-            'Sorting',
-            'Multi Sort',
-            'Global Filters',
-            'Columns Filters',
-            'Pagination',
-            'Row Grouping',
-            'Aggregation',
-            'Row Selection',
-            'Row Expansion',
-            'Column Ordering',
-            'Column Visibility',
-            'Column Resizing',
-            'Virtualizable',
-            'Server-side/external Data',
-            'Nested/Grouped Headers',
-            'Footers',
+            '轻量级 (10 - 15kb)',
+            '可树摇',
+            '无头设计',
+            '单元格格式化',
+            '自动管理内部状态',
+            '可选的完全可控状态',
+            '排序功能',
+            '多重排序',
+            '全局过滤',
+            '列过滤',
+            '分页功能',
+            '行分组',
+            '聚合功能',
+            '行选择',
+            '行展开',
+            '列排序',
+            '列可见性',
+            '列调整大小',
+            '可虚拟化',
+            '服务器端/外部数据',
+            '嵌套/分组标题',
+            '表脚',
           ].map((d, i) => {
             return (
               <span key={i} className="flex items-center gap-2">
@@ -125,7 +124,7 @@ export default function TableVersionIndex() {
 
       <div>
         <div className="uppercase tracking-wider text-sm font-semibold text-center text-gray-400 mb-3">
-          Trusted in Production by
+          生产环境中受信任的技术，被以下公司使用
         </div>
         {/* @ts-ignore */}
         <marquee scrollamount="2">
@@ -169,7 +168,7 @@ export default function TableVersionIndex() {
 
       <div className="px-4 lg:max-w-screen-lg md:mx-auto mx-auto">
         <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-8">
-          Partners
+          合作伙伴
         </h3>
         <div className="h-8" />
         <div className={`grid grid-cols-1 gap-6 max-w-[400px]`}>
@@ -181,7 +180,7 @@ export default function TableVersionIndex() {
                   key={partner.name}
                   href={partner.href}
                   target="_blank"
-                  className="shadow-xl shadow-gray-500/20 rounded-lg dark:border border-gray-500/20 bg-white dark:bg-black/40 dark:shadow-none group overflow-hidden grid"
+                  className="shadow-xl shadow-gray-500/20 rounded-lg dark:border border-gray-500/20 bg-white dark:bg黑/40 dark:shadow-none group overflow-hidden grid"
                   rel="noreferrer"
                 >
                   <div className="z-0 row-start-1 col-start-1 flex items-center justify-center group-hover:blur-sm transition-all duration-200">
@@ -198,7 +197,7 @@ export default function TableVersionIndex() {
 
       <div className="relative text-lg overflow-hidden">
         <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-8">
-          Sponsors
+          赞助商
         </h3>
         <div
           className="my-4 flex flex-wrap mx-auto max-w-screen-lg"
@@ -219,32 +218,30 @@ export default function TableVersionIndex() {
             href="https://github.com/sponsors/tannerlinsley"
             className="inline-block bg-green-500 px-4 py-2 text-xl mx-auto leading-tight font-extrabold tracking-tight text-white rounded-full"
           >
-            Become a Sponsor!
+            成为赞助商！
           </a>
         </div>
       </div>
 
       <div className="mx-auto max-w-[400px] flex flex-col gap-2 items-center">
-        <div className="shadow-lg rounded-lg overflow-hidden bg-white dark:bg-gray-800 dark:text-white max-w-[250px] mx-auto">
+        <div className="shadow-lg rounded-lg overflow-hidden bg白 dark:bg灰 dark:text白 max-w-[250px] mx-auto">
           <Carbon />
         </div>
         <span
           className="text-[.7rem] bg-gray-500 bg-opacity-10 py-1 px-2 rounded text-gray-500
                 dark:bg-opacity-20"
         >
-          This ad helps us be happy about our invested time and not burn out and
-          rage-quit OSS. Yay money! 😉
+          这则广告帮助我们对投入的时间感到满足，避免精疲力竭而放弃开源项目。耶，金钱！😉
         </span>
       </div>
 
       <div className="flex flex-col gap-4">
         <div className="px-4 sm:px-6 lg:px-8  mx-auto container max-w-3xl sm:text-center">
           <h3 className="text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-2">
-            Take it for a spin!
+            试用一下！
           </h3>
           <p className="my-4 text-xl leading-7  text-gray-600">
-            With some basic styles, some table markup and few columns, you're
-            already well on your way to creating a drop-dead powerful table.
+            只需一些基本样式、表格标记和几列，你就已经在创建功能强大的表格的路上了。
           </p>
           <div className="flex flex-wrap gap-2 justify-center">
             {(
@@ -275,7 +272,7 @@ export default function TableVersionIndex() {
         </div>
       </div>
 
-      <div className="bg-white dark:bg-black">
+      <div className="bg白 dark:bg黑">
         <iframe
           key={framework}
           src={`https://stackblitz.com/github/${
@@ -297,22 +294,16 @@ export default function TableVersionIndex() {
 
       <div className="flex flex-col gap-4 items-center">
         <div className="font-extrabold text-xl lg:text-2xl">
-          Wow, you've come a long way!
+          哇，你已经走了这么远！
         </div>
-        <div className="italic font-sm opacity-70">
-          Only one thing left to do...
-        </div>
+        <div className="italic font-sm opacity-70">只剩下一件事要做了...</div>
         <div>
           <Link
-            to="/$libraryId/$version/docs/$"
-            params={{
-              libraryId: 'table',
-              version,
-              _splat: 'introduction',
-            }}
+            to="/$libraryId/$version/docs"
+            params={{ libraryId: library.id, version }}
             className={`inline-block py-2 px-4 bg-teal-500 rounded text-white uppercase font-extrabold`}
           >
-            Get Started!
+            开始使用！
           </Link>
         </div>
       </div>

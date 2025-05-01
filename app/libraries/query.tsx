@@ -5,7 +5,7 @@ import { VscPreview, VscWand } from 'react-icons/vsc'
 import { BiBookAlt } from 'react-icons/bi'
 import { twMerge } from 'tailwind-merge'
 
-const repo = 'tanstack/query'
+const repo = 'tanstack-dev/query'
 
 const textStyles = 'text-red-500 dark:text-red-400'
 
@@ -13,10 +13,11 @@ export const queryProject = {
   id: 'query',
   name: 'TanStack Query',
   cardStyles: `shadow-xl shadow-red-700/20 dark:shadow-lg dark:shadow-red-500/30 text-red-500 border-2 border-transparent hover:border-current`,
+  docsRoot: 'docs/zh-hans',
   to: '/query',
-  tagline: `Powerful asynchronous state management, server-state utilities and data fetching`,
+  tagline: `强大的异步状态管理、服务器状态工具和数据获取`,
   description:
-    'Powerful asynchronous state management, server-state utilities and data fetching. Fetch, cache, update, and wrangle all forms of async data in your TS/JS, React, Vue, Solid, Svelte & Angular applications all without touching any "global state"',
+    '强大的异步状态管理、服务器状态工具和数据获取。在 TS/JS、React、Vue、Solid、Svelte 和 Angular 应用程序中获取、缓存、更新和处理所有形式的异步数据，无需接触任何"全局状态"',
   ogImage: 'https://github.com/tanstack/query/raw/main/media/repo-header.png',
   badge: undefined,
   bgStyle: 'bg-red-500',
@@ -51,12 +52,12 @@ export const queryProject = {
   menu: [
     {
       icon: <VscPreview />,
-      label: 'Examples',
+      label: '示例',
       to: '/query/latest/docs/framework/react/examples/basic',
     },
     {
       icon: <BiBookAlt />,
-      label: 'Docs',
+      label: '文档',
       to: '/query/latest/docs/framework/react/overview',
     },
     {
@@ -67,7 +68,7 @@ export const queryProject = {
   ],
   featureHighlights: [
     {
-      title: 'Declarative & Automatic',
+      title: '声明式和自动化',
       icon: (
         <VscWand
           className={twMerge('motion-safe:animate-pulse', textStyles)}
@@ -79,19 +80,17 @@ export const queryProject = {
       ),
       description: (
         <div>
-          Writing your data fetching logic by hand is over. Tell TanStack Query
-          where to get your data and how fresh you need it to be and the rest is
-          automatic. It handles{' '}
+          手动编写数据获取逻辑的时代已经过去。告诉 TanStack Query
+          从哪里获取数据以及需要多新鲜的数据，剩下的全部自动化处理。它{' '}
           <span className={twMerge('font-semibold', textStyles)}>
-            caching, background updates and stale data out of the box with
-            zero-configuration
+            开箱即用地处理缓存、后台更新和过时数据，无需任何配置
           </span>
-          .
+          。
         </div>
       ),
     },
     {
-      title: 'Simple & Familiar',
+      title: '简单且熟悉',
       icon: (
         <FaBolt
           className={twMerge('motion-safe:animate-bounce', textStyles)}
@@ -103,19 +102,18 @@ export const queryProject = {
       ),
       description: (
         <div>
-          If you know how to work with promises or async/await, then you already
-          know how to use TanStack Query. There's{' '}
+          如果你知道如何使用 promises 或 async/await，那么你已经知道如何使用
+          TanStack Query。这里{' '}
           <span className={twMerge('font-semibold', textStyles)}>
-            no global state to manage, reducers, normalization systems or heavy
-            configurations to understand
+            没有全局状态需要管理，没有
+            reducers，没有规范化系统或繁重的配置需要理解
           </span>
-          . Simply pass a function that resolves your data (or throws an error)
-          and the rest is history.
+          。只需传递一个能解析你的数据（或抛出错误）的函数，剩下的都是历史了。
         </div>
       ),
     },
     {
-      title: 'Extensible',
+      title: '可扩展性',
       icon: (
         <FaCogs
           className={twMerge('motion-safe:animate-spin', textStyles)}
@@ -127,14 +125,13 @@ export const queryProject = {
       ),
       description: (
         <div>
-          TanStack Query is configurable down to each observer instance of a
-          query with knobs and options to fit every use-case. It comes wired up
-          with{' '}
+          TanStack Query
+          可以配置到每个查询实例的观察者级别，拥有适合每个用例的旋钮和选项。它配备了{' '}
           <span className={twMerge('font-semibold', textStyles)}>
-            dedicated devtools, infinite-loading APIs, and first class mutation
-            tools that make updating your data a breeze
+            专用的开发工具、无限加载 API
+            和一流的变更工具，使更新数据变得轻而易举
           </span>
-          . Don't worry though, everything is pre-configured for success!
+          。不过别担心，一切都预先配置为成功！
         </div>
       ),
     },

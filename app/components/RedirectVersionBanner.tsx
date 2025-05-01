@@ -26,7 +26,7 @@ export function RedirectVersionBanner(props: {
     return (
       <div className="p-4 bg-white/70 text-black dark:bg-gray-500/40 dark:text-white shadow-xl shadow-black/20 flex items-center justify-center gap-2.5 lg:gap-4 fixed top-4 left-1/2 bottom-auto backdrop-blur-sm z-20 -translate-x-1/2 rounded-3xl lg:rounded-full overflow-hidden w-[80%] lg:w-auto">
         <p className="block">
-          You are currently reading <strong>{version}</strong> docs. Redirect to{' '}
+          您目前正在浏览 <strong>{version}</strong> 版本的文档。是否跳转至{' '}
           <Link
             to={activeMatch.fullPath}
             params={{
@@ -34,9 +34,9 @@ export function RedirectVersionBanner(props: {
             }}
             className="font-bold underline"
           >
-            latest
+            最新版本
           </Link>{' '}
-          version?
+          ？
         </p>
         <div className="flex gap-2 flex-col lg:flex-row items-center">
           <Link
@@ -47,13 +47,13 @@ export function RedirectVersionBanner(props: {
             replace
             className="bg-black dark:bg-white dark:text-black text-white w-full lg:w-auto py-1 px-2 rounded-md uppercase font-black text-xs"
           >
-            Latest
+            最新版
           </Link>
           <button
             onClick={() => setShowModal(false)}
             className="bg-black dark:bg-white dark:text-black text-white w-full lg:w-auto py-1 px-2 rounded-md uppercase font-black text-xs"
           >
-            Hide
+            隐藏
           </button>
         </div>
       </div>

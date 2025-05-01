@@ -5,9 +5,9 @@ export const Route = createFileRoute('/_libraries/support')({
   component: LoginComp,
   head: () => ({
     meta: seo({
-      title: 'Support | TanStack',
-      description: `Help and support for TanStack libraries and projects`,
-      keywords: `tanstack,react,reactjs,react query,react table,open source,open source software,oss,software,help,support`,
+      title: '技术支持 | TanStack',
+      description: `TanStack 库和项目的帮助与技术支持`,
+      keywords: `tanstack,react,reactjs,react query,react table,开源,开源软件,oss,软件,帮助,支持`,
     }),
   }),
 })
@@ -20,15 +20,14 @@ function LoginComp() {
           <div className="space-y-4">
             <h1 className="space-y-2">
               <div className="text-3xl font-black tracking-tight sm:text-4xl md:text-5xl lg:text-6xl/none text-pretty">
-                Support
+                技术支持
               </div>
               <div className="text-xl font-normal tracking-tight sm:text-2xl md:text-3xl lg:text-4xl/none text-pretty">
-                for TanStack Libraries
+                TanStack 库的技术支持
               </div>
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400 text-pretty">
-              Whether you're a solo developer or a large enterprise, we have
-              solutions that will fit your needs like a glove!
+              无论您是独立开发者还是大型企业，我们都有适合您需求的解决方案！
             </p>
           </div>
           <div className="flex items-center flex-wrap gap-4 max-w-full w-[900px] justify-center">
@@ -41,16 +40,14 @@ function LoginComp() {
                 Discord
               </div>
               <div className="p-4 flex gap-2 flex-wrap">
-                {['Community Support', 'Q&A', 'General Chat', 'Networking'].map(
-                  (d) => (
-                    <div
-                      key={d}
-                      className="text-sm bg-white text-discord rounded-full py-1 px-2 shadow-lg font-bold"
-                    >
-                      {d}
-                    </div>
-                  )
-                )}
+                {['社区支持', '问答', '常规聊天', '社交网络'].map((d) => (
+                  <div
+                    key={d}
+                    className="text-sm bg-white text-discord rounded-full py-1 px-2 shadow-lg font-bold"
+                  >
+                    {d}
+                  </div>
+                ))}
               </div>
             </Link>
             <Link
@@ -62,7 +59,7 @@ function LoginComp() {
                 GitHub
               </div>
               <div className="p-4 flex gap-2 flex-wrap">
-                {['Bug Reports', 'Feature Requests', 'Source Code'].map((d) => (
+                {['错误报告', '功能请求', '源代码'].map((d) => (
                   <div
                     key={d}
                     className="text-sm bg-white text-black rounded-full py-1 px-2 shadow-lg font-bold"
@@ -77,10 +74,10 @@ function LoginComp() {
               className="max-w-[300px] rounded-lg bg-gradient-to-br from-green-500 to-sky-500 text-white shadow-black/20 shadow-lg hover:shadow-2xl hover:shadow-black/20 divide-y divide-white/30 transition-all duration-200 hover:scale-105"
             >
               <div className="p-4 text-lg md:text-xl lg:text-2xl font-bold text-center">
-                Dedicated Support
+                专属支持
               </div>
               <div className="p-4 flex gap-2 flex-wrap">
-                {['Consulting', 'Enterprise Support Contracts'].map((d) => (
+                {['咨询服务', '企业支持合同'].map((d) => (
                   <div
                     key={d}
                     className="text-sm bg-white/90 rounded-full py-1 px-2 shadow-lg font-bold"

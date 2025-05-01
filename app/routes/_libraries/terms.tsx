@@ -6,8 +6,8 @@ export const Route = createFileRoute('/_libraries/terms')({
   component: RouteComp,
   head: () => ({
     meta: seo({
-      title: 'Terms of Service',
-      description: 'Terms of Service',
+      title: '服务条款',
+      description: '服务条款',
     }),
   }),
 })
@@ -17,208 +17,159 @@ export default function RouteComp() {
     <div className="flex flex-col max-w-full min-h-screen gap-12 p-4 md:p-8 pb-0">
       <div className="flex-1 space-y-12 w-full max-w-3xl mx-auto">
         <header className="">
-          <h1 className="text-4xl font-bold">Terms of Service</h1>
-          <p className="">Effective Date: January 18, 2025</p>
+          <h1 className="text-4xl font-bold">服务条款</h1>
+          <p className="">生效日期：2025年1月18日</p>
         </header>
 
         <section className="">
           <p className="text-lg">
-            Welcome to <strong>TanStack.com</strong> (the "Site"). These Terms
-            of Service ("Terms") govern your use of our website, products,
-            services, and any content made available on or through the Site. By
-            accessing or using TanStack.com, you agree to these Terms. If you do
-            not agree, you must not use the Site.
+            欢迎访问 <strong>TanStack.com</strong>
+            （以下简称"本网站"）。这些服务条款（以下简称"条款"）规定了您对我们网站、产品、服务以及通过本网站提供的任何内容的使用。通过访问或使用
+            TanStack.com，您同意这些条款。如果您不同意，则不得使用本网站。
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">1. Acceptance of Terms</h2>
+          <h2 className="text-2xl font-semibold">1. 接受条款</h2>
           <p>
-            By accessing, browsing, or using TanStack.com, you acknowledge that
-            you have read, understood, and agree to be bound by these Terms and
-            our Privacy Policy.
+            通过访问、浏览或使用
+            TanStack.com，您确认已阅读、理解并同意受这些条款和我们的隐私政策约束。
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">2. Changes to Terms</h2>
+          <h2 className="text-2xl font-semibold">2. 条款变更</h2>
           <p>
-            We may modify these Terms at any time without prior notice. Changes
-            will be effective upon posting to the Site. Your continued use of
-            TanStack.com after changes are posted constitutes acceptance of the
-            revised Terms.
+            我们可能会随时修改这些条款，恕不另行通知。变更将在发布到网站后立即生效。在变更发布后继续使用
+            TanStack.com 构成接受修订后的条款。
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">3. Eligibility</h2>
-          <p>
-            Anyone can use the Site. By using the Site, you agree to comply with
-            these Terms.
-          </p>
+          <h2 className="text-2xl font-semibold">3. 资格</h2>
+          <p>任何人都可以使用本网站。通过使用本网站，您同意遵守这些条款。</p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">4. Use of the Site</h2>
+          <h2 className="text-2xl font-semibold">4. 网站使用</h2>
           <p>
-            You agree to use the Site only for lawful purposes and in accordance
-            with these Terms. Specifically, you agree not to:
+            您同意仅将网站用于合法目的，并按照这些条款使用。具体而言，您同意不会：
           </p>
           <ul className="list-disc pl-8">
-            <li>Violate any applicable laws or regulations.</li>
-            <li>
-              Engage in unauthorized access or use of TanStack's systems or
-              servers.
-            </li>
-            <li>Upload or transmit viruses, malware, or harmful code.</li>
-            <li>
-              Reverse engineer, decompile, or attempt to derive source code from
-              the Site.
-            </li>
+            <li>违反任何适用法律或法规。</li>
+            <li>未经授权访问或使用 TanStack 的系统或服务器。</li>
+            <li>上传或传输病毒、恶意软件或有害代码。</li>
+            <li>对网站进行反向工程、反编译或试图获取源代码。</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">5. Account Registration</h2>
+          <h2 className="text-2xl font-semibold">5. 账户注册</h2>
           <ul className="list-disc pl-8">
             <li>
-              Some features of the Site may require you to register for an
-              account. You must provide accurate, complete, and current
-              information.
+              本网站的某些功能可能需要您注册账户。您必须提供准确、完整且最新的信息。
             </li>
-            <li>
-              You are responsible for maintaining the confidentiality of your
-              account credentials and for all activities under your account.
-            </li>
-            <li>
-              Notify us immediately of any unauthorized use of your account or
-              security breach.
-            </li>
+            <li>您有责任维护账户凭证的机密性，并对您账户下的所有活动负责。</li>
+            <li>如发现账户未经授权使用或安全漏洞，请立即通知我们。</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">6. Intellectual Property</h2>
+          <h2 className="text-2xl font-semibold">6. 知识产权</h2>
           <p>
-            All content, features, and functionality on the Site—including
-            software, code, text, images, videos, and trademarks—are owned by
-            TanStack or its licensors and are protected by applicable
-            intellectual property laws.
+            网站上的所有内容、功能和功能——包括软件、代码、文本、图像、视频和商标——均为
+            TanStack 或其许可方所有，并受适用知识产权法律保护。
           </p>
           <p>
-            <strong>You may not:</strong>
+            <strong>您不得：</strong>
           </p>
           <ul className="list-disc pl-8">
-            <li>
-              Reproduce, modify, distribute, or publicly display content from
-              the Site without prior written permission.
-            </li>
-            <li>Use any of our trademarks without prior written consent.</li>
+            <li>未经事先书面许可，复制、修改、分发或公开展示网站内容。</li>
+            <li>未经事先书面同意，使用我们的任何商标。</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">7. User Content</h2>
+          <h2 className="text-2xl font-semibold">7. 用户内容</h2>
           <p>
-            If you submit or post any content (e.g., feedback, comments, or code
-            contributions), you grant TanStack a non-exclusive, worldwide,
-            royalty-free license to use, reproduce, and display such content.
+            如果您提交或发布任何内容（例如反馈、评论或代码贡献），您授予
+            TanStack 非独占、全球性、免版税的许可，以使用、复制和展示此类内容。
           </p>
           <p>
-            <strong>You represent and warrant that:</strong>
+            <strong>您声明并保证：</strong>
           </p>
           <ul className="list-disc pl-8">
-            <li>You own or have the necessary rights to post the content.</li>
-            <li>
-              Your content does not violate any third-party rights or applicable
-              laws.
-            </li>
+            <li>您拥有或具有发布内容所需的必要权利。</li>
+            <li>您的内容不侵犯任何第三方权利或适用法律。</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">
-            8. Disclaimer of Warranties
-          </h2>
+          <h2 className="text-2xl font-semibold">8. 免责声明</h2>
           <p>
-            The site and its content are provided "as is" and "as available"
-            without any warranties of any kind, whether express or implied.
-            TanStack disclaims all warranties, including implied warranties of
-            merchantability, fitness for a particular purpose, and
-            non-infringement.
+            本网站及其内容按"原样"和"可用性"提供，不作任何形式的明示或暗示保证。TanStack
+            不提供任何保证，包括对适销性、特定用途适用性和非侵权的暗示保证。
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">9. Limitation of Liability</h2>
+          <h2 className="text-2xl font-semibold">9. 责任限制</h2>
           <p>
-            To the maximum extent permitted by law, TanStack shall not be liable
-            for any indirect, incidental, special, consequential, or punitive
-            damages arising from your use of the Site or Services.
+            在法律允许的最大范围内，TanStack
+            不对因您使用本网站或服务而产生的任何间接、偶然、特殊、后果性或惩罚性损害承担责任。
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">10. Third-Party Links</h2>
+          <h2 className="text-2xl font-semibold">10. 第三方链接</h2>
           <p>
-            The Site may contain links to third-party websites. We are not
-            responsible for the content or practices of any linked third-party
-            sites. Such links do not imply endorsement.
+            本网站可能包含第三方网站的链接。我们不对任何链接的第三方站点的内容或做法负责。此类链接并不表示认可。
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">11. Termination</h2>
+          <h2 className="text-2xl font-semibold">11. 终止</h2>
           <p>
-            We reserve the right to terminate or suspend your access to the
-            Site, without prior notice or liability, for any reason, including
-            breach of these Terms.
+            我们保留因任何原因终止或暂停您访问本网站的权利，恕不另行通知或承担任何责任，包括违反这些条款。
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">12. Governing Law</h2>
+          <h2 className="text-2xl font-semibold">12. 适用法律</h2>
+          <p>这些条款应受犹他州法律管辖并按其解释，不考虑其冲突法律规定。</p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold">13. 争议解决</h2>
           <p>
-            These Terms shall be governed by and construed in accordance with
-            the laws of Utah, without regard to its conflict of law provisions.
+            因这些条款引起的任何争议应通过具有约束力的仲裁解决，按照犹他州标准仲裁规则进行。仲裁应在犹他州进行。
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">13. Dispute Resolution</h2>
+          <h2 className="text-2xl font-semibold">14. 可分割性</h2>
           <p>
-            Any dispute arising from these Terms shall be resolved through
-            binding arbitration in accordance with the Standard Arbitration
-            Rules for Utah. The arbitration shall take place in Utah.
+            如果这些条款的任何规定被发现不可执行或无效，该规定应在保留其余规定的同时受到限制或消除到必要的最低程度。
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">14. Severability</h2>
+          <h2 className="text-2xl font-semibold">15. 完整协议</h2>
           <p>
-            If any provision of these Terms is found to be unenforceable or
-            invalid, that provision shall be limited or eliminated to the
-            minimum extent necessary while preserving the remaining provisions.
+            这些条款构成您与 TanStack
+            之间关于使用本网站的完整协议，取代任何先前的协议。
           </p>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold">15. Entire Agreement</h2>
-          <p>
-            These Terms constitute the entire agreement between you and TanStack
-            regarding the use of the Site, superseding any prior agreements.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold">16. Contact Us</h2>
-          <p>If you have questions about these Terms, please contact us at:</p>
+          <h2 className="text-2xl font-semibold">16. 联系我们</h2>
+          <p>如果您对这些条款有任何疑问，请联系我们：</p>
           <address>
             <p>
               <strong>TanStack</strong>
             </p>
             <p>
-              Email:{' '}
+              电子邮件：{' '}
               <a
                 href="mailto:support@tanstack.com"
                 className="text-blue-600 underline"

@@ -44,28 +44,24 @@ export default function StoreVersionIndex() {
             lg:text-5xl lg:max-w-2xl"
           >
             <span className="underline decoration-dashed decoration-gray-500 decoration-3 underline-offset-2">
-              Framework agnostic
+              框架无关的
             </span>{' '}
-            type-safe store w/ reactive framework adapters
+            类型安全存储，带有响应式框架适配器
           </h2>
           <p
             className="text opacity-90 max-w-[500px]
             lg:text-xl lg:max-w-[800px]"
           >
-            Level up your state management with TanStack Store – the
-            framework-agnostic, type-safe store. Enjoy{' '}
-            <strong>
-              minimal setup, granular APIs, and seamless adaptability across
-              frameworks
-            </strong>
-            . Simplify your development and boost efficiency with TanStack
-            Store.
+            使用 TanStack Store 提升您的状态管理 –
+            框架无关、类型安全的存储。享受
+            <strong>最小化设置、精细化 API 和跨框架的无缝适配性</strong>
+            。使用 TanStack Store 简化您的开发并提高效率。
           </p>
           <Link
             to="./docs/"
             className={`py-2 px-4 bg-stone-600 text-white rounded uppercase font-extrabold`}
           >
-            Get Started
+            开始使用
           </Link>
         </div>
         <LibraryFeatureHighlights
@@ -73,7 +69,7 @@ export default function StoreVersionIndex() {
         />
         <div className="px-4 w-[500px] max-w-full mx-auto">
           <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-8">
-            Partners
+            合作伙伴
           </h3>
           <div className="h-8" />
           <div
@@ -83,19 +79,19 @@ export default function StoreVersionIndex() {
                         dark:bg-black/40 dark:shadow-none"
           >
             <span className="flex items-center gap-2 p-12 text-4xl text-rose-500 font-black uppercase">
-              Store <TbHeartHandshake /> You?
+              Store <TbHeartHandshake /> 您?
             </span>
             <div className="flex flex-col p-4 gap-4">
               <div>
-                We're looking for a TanStack Store OSS Partner to go above and
-                beyond the call of sponsorship. Are you as invested in TanStack
-                Store as we are? Let's push the boundaries of Store together!
+                我们正在寻找一个 TanStack Store OSS
+                合作伙伴，超越普通赞助的角色。 您是否和我们一样对 TanStack Store
+                充满热情？让我们一起突破 Store 的边界！
               </div>
               <a
                 href="mailto:partners@tanstack.com?subject=TanStack Store Partnership"
                 className="text-blue-500 uppercase font-black text-sm"
               >
-                Let's chat
+                一起聊聊
               </a>
             </div>
           </div>
@@ -103,7 +99,7 @@ export default function StoreVersionIndex() {
 
         <div className="relative text-lg overflow-hidden">
           <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-8">
-            Sponsors
+            赞助商
           </h3>
           <div
             className="my-4 flex flex-wrap mx-auto max-w-screen-lg"
@@ -124,7 +120,7 @@ export default function StoreVersionIndex() {
               href="https://github.com/sponsors/tannerlinsley"
               className="inline-block bg-green-500 px-4 py-2 text-xl mx-auto leading-tight font-extrabold tracking-tight text-white rounded-full"
             >
-              Become a Sponsor!
+              成为赞助商！
             </a>
           </div>
         </div>
@@ -137,8 +133,7 @@ export default function StoreVersionIndex() {
             className="text-[.7rem] bg-gray-500 bg-opacity-10 py-1 px-2 rounded text-gray-500
                 dark:bg-opacity-20"
           >
-            This ad helps us be happy about our invested time and not burn out
-            and rage-quit OSS. Yay money! 😉
+            这则广告帮助我们对投入的时间感到满足，避免精疲力竭而放弃开源项目。耶，金钱！😉
           </span>
         </div>
 
@@ -218,17 +213,15 @@ export default function StoreVersionIndex() {
 
         <div className="flex flex-col gap-4 items-center">
           <div className="font-extrabold text-xl lg:text-2xl">
-            Wow, you've come a long way!
+            哇，你已经走了这么远！
           </div>
-          <div className="italic font-sm opacity-70">
-            Only one thing left to do...
-          </div>
+          <div className="italic font-sm opacity-70">只剩下一件事要做了...</div>
           <div>
             <Link
               to="./docs/"
               className={`inline-block py-2 px-4 bg-stone-700 rounded text-white uppercase font-extrabold`}
             >
-              Get Started!
+              开始使用！
             </Link>
           </div>
         </div>

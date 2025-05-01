@@ -27,7 +27,7 @@ export function Toc({
   return (
     <nav className="flex flex-col sticky top-2 max-h-screen divide-y divide-gray-500/20">
       <div className="p-2">
-        <h3 className="text-[.9em] font-bold px-2">On this page</h3>
+        <h3 className="text-[.9em] font-bold px-2">本页内容</h3>
       </div>
       <ul
         className={twMerge(

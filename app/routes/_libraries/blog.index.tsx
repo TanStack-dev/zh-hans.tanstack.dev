@@ -16,10 +16,10 @@ const fetchFrontMatters = createServerFn({ method: 'GET' }).handler(
 
     const frontMatters = await Promise.all(
       postInfos.map(async (info) => {
-        const filePath = `app/blog/${info.id}.md`
+        const filePath = `app/blog/zh-hans/${info.id}.md`
 
         const file = await fetchRepoFile(
-          'tanstack/tanstack.com',
+          'tanstack-dev/zh-hans.tanstack.dev',
           'main',
           filePath
         )

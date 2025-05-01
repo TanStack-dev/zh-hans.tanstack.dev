@@ -47,27 +47,25 @@ export default function PacerVersionIndex() {
             lg:text-5xl lg:max-w-2xl"
           >
             <span className="underline decoration-dashed decoration-gray-500 decoration-3 underline-offset-2">
-              Framework agnostic
+              框架无关
             </span>{' '}
-            type-safe rate-limiting and queueing utilities
+            类型安全的速率限制和队列工具
           </h2>
           <p
             className="text opacity-90 max-w-[500px]
             lg:text-xl lg:max-w-[800px]"
           >
-            Take control of your application's timing with TanStack Pacer's{' '}
-            <strong>rate limiting, throttling, and debouncing utilities</strong>
-            . Manage complex async workflows using{' '}
-            <strong>intelligent queuing and concurrency controls</strong> while
-            maintaining full control with built-in pause, resume, and cancel
-            capabilities.
+            使用 TanStack Pacer 的 <strong>速率限制、节流和防抖动工具</strong>
+            控制您应用程序的定时。通过 <strong>智能队列和并发控制</strong>
+            管理复杂的异步工作流，
+            同时保持对内置的暂停、恢复和取消功能的完全控制。
           </p>
           <Link
             to="/$libraryId/$version/docs"
             params={{ libraryId: library.id, version }}
             className={`py-2 px-4 bg-stone-600 text-white rounded uppercase font-extrabold`}
           >
-            Get Started
+            开始使用
           </Link>
         </div>
         <LibraryFeatureHighlights
@@ -77,31 +75,30 @@ export default function PacerVersionIndex() {
         <div className="px-4 sm:px-6 lg:px-8 mx-auto">
           <div className=" sm:text-center pb-16">
             <h3 className="text-3xl text-center mx-auto leading-tight font-extrabold tracking-tight sm:text-4xl lg:leading-none mt-2">
-              Framework Agnostic & Feature Rich
+              轻量级 & 功能丰富
             </h3>
             <p className="mt-4 text-xl max-w-3xl mx-auto leading-7 opacity-60">
-              TanStack Pacer's API is highly modular and framework-independent
-              while still prioritizing ergonomics. Behold, the obligatory
-              feature-list:
+              TanStack Pacer
+              高度模块化且与框架无关，同时仍然优先考虑人体工程学。看看这些必备功能：
             </p>
           </div>
-          <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-4 mx-auto">
+          <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4  mx-auto">
             {[
-              'Lightweight',
-              'Tree-Shaking',
-              'Type-Safe',
-              'Rate Limiting',
-              'Throttling',
-              'Debouncing',
-              'Queueing',
-              'LIFO/FIFO/Dequeue Ordering',
-              'Concurrency Control',
-              'Queue Prioritization',
-              'Pause/Resume Controls',
-              'Cancellation',
-              'Abort Controller Support',
-              'Promise Integration',
-              'Multiple Layers of Abstraction',
+              '轻量级',
+              '可树摇',
+              '类型安全',
+              '速率限制',
+              '节流',
+              '防抖动',
+              '队列管理',
+              'LIFO/FIFO/双向队列排序',
+              '并发控制',
+              '队列优先级',
+              '暂停/恢复控制',
+              '取消功能',
+              'Abort Controller 支持',
+              'Promise 集成',
+              '多层抽象',
             ].map((d, i) => {
               return (
                 <span key={i} className="flex items-center gap-2">
@@ -114,7 +111,7 @@ export default function PacerVersionIndex() {
 
         <div className="px-4 lg:max-w-screen-lg md:mx-auto mx-auto max-w-full">
           <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-8">
-            Partners
+            合作伙伴
           </h3>
           <div className="h-8" />
           <div className={`w-[500px] max-w-full`}>
@@ -143,7 +140,7 @@ export default function PacerVersionIndex() {
 
         <div className="relative text-lg overflow-hidden">
           <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-8">
-            Sponsors
+            赞助商
           </h3>
           <div
             className="my-4 flex flex-wrap mx-auto max-w-screen-lg"
@@ -164,7 +161,7 @@ export default function PacerVersionIndex() {
               href="https://github.com/sponsors/tannerlinsley"
               className="inline-block bg-green-500 px-4 py-2 text-xl mx-auto leading-tight font-extrabold tracking-tight text-white rounded-full"
             >
-              Become a Sponsor!
+              成为赞助商！
             </a>
           </div>
         </div>
@@ -177,19 +174,17 @@ export default function PacerVersionIndex() {
             className="text-[.7rem] bg-gray-500 bg-opacity-10 py-1 px-2 rounded text-gray-500
                 dark:bg-opacity-20"
           >
-            This ad helps us be happy about our invested time and not burn out
-            and rage-quit OSS. Yay money! 😉
+            这则广告帮助我们对投入的时间感到满足，避免精疲力竭而放弃开源项目。耶，金钱！😉
           </span>
         </div>
 
-        {/* <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           <div className="px-4 sm:px-6 lg:px-8  mx-auto container max-w-3xl sm:text-center">
             <h3 className="text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-2">
-              Take it for a spin!
+              试用一下！
             </h3>
-            <p className="my-4 text-xl leading-7 text-gray-600">
-              With just a few lines of code, you can start using powerful rate
-              limiting, throttling, debouncing, and queueing utilities.
+            <p className="my-4 text-xl leading-7  text-gray-600">
+              看看它的实际效果！
             </p>
             <div className="flex flex-wrap gap-2 justify-center">
               {(
@@ -226,22 +221,20 @@ export default function PacerVersionIndex() {
               border: '0',
             }}
           ></iframe>
-        </div> */}
+        </div>
 
         <div className="flex flex-col gap-4 items-center">
           <div className="font-extrabold text-xl lg:text-2xl">
-            Wow, you've come a long way!
+            哇，你已经走了这么远！
           </div>
-          <div className="italic font-sm opacity-70">
-            Only one thing left to do...
-          </div>
+          <div className="italic font-sm opacity-70">只剩下一件事要做了...</div>
           <div>
             <Link
               to="/$libraryId/$version/docs"
               params={{ libraryId: library.id, version }}
               className={`inline-block py-2 px-4 bg-stone-700 rounded text-white uppercase font-extrabold`}
             >
-              Get Started!
+              开始使用！
             </Link>
           </div>
         </div>

@@ -59,23 +59,23 @@ export default function RouteComp() {
             lg:text-5xl lg:max-w-2xl"
         >
           <span className="underline decoration-dashed decoration-yellow-500 decoration-3 underline-offset-2">
-            Headless
+            无头
           </span>{' '}
-          UI for Virtualizing Large Element Lists
+          UI 用于虚拟化大型元素列表
         </h2>
         <p
           className="text opacity-90 max-w-sm
             lg:text-xl lg:max-w-2xl"
         >
-          Virtualize only the visible DOM nodes within massive scrollable
-          elements at 60FPS in TS/JS, React, Vue, Solid, Svelte, Lit & Angular
-          while retaining 100% control over markup and styles.
+          在 TS/JS、React、Vue、Solid、Svelte、Lit 和 Angular 中以 60FPS
+          的速度仅虚拟化 大型可滚动元素中的可见 DOM 节点，同时保持对标记和样式的
+          100% 控制。
         </p>
         <Link
           to="./docs/introduction"
           className={`py-2 px-4 bg-purple-500 rounded text-white uppercase font-extrabold`}
         >
-          Get Started
+          开始使用
         </Link>
       </div>
 
@@ -84,28 +84,27 @@ export default function RouteComp() {
       <div className="px-4 sm:px-6 lg:px-8 mx-auto">
         <div className=" sm:text-center pb-16">
           <h3 className="text-3xl text-center mx-auto leading-tight font-extrabold tracking-tight sm:text-4xl lg:leading-none mt-2">
-            Framework Agnostic & Feature Rich
+            框架无关 & 功能丰富
           </h3>
           <p className="mt-4 text-xl max-w-3xl mx-auto leading-7 opacity-60">
-            TanStack Virtual's API and engine are highly modular and
-            framework-independent while still prioritizing ergonomics. Behold,
-            the obligatory feature-list:
+            TanStack Virtual 的 API
+            和引擎高度模块化且与框架无关，同时仍然优先考虑人体工程学。看看这些必备功能：
           </p>
         </div>
         <div className="grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-4  mx-auto">
           {[
-            'Lightweight (10 - 15kb)',
-            'Tree-Shaking',
-            'Headless',
-            'Vertical/Column Virtualization',
-            'Horizontal/Row Virtualization',
-            'Grid Virtualization',
-            'Window-Scrolling',
-            'Fixed Sizing',
-            'Variable Sizing',
-            'Dynamic/Measured Sizing',
-            'Scrolling Utilities',
-            'Sticky Items',
+            '轻量级 (10 - 15kb)',
+            '可树摇',
+            '无头设计',
+            '垂直/列虚拟化',
+            '水平/行虚拟化',
+            '网格虚拟化',
+            '窗口滚动',
+            '固定尺寸',
+            '可变尺寸',
+            '动态/测量尺寸',
+            '滚动工具函数',
+            '粘性元素',
           ].map((d, i) => {
             return (
               <span key={i} className="flex items-center gap-2">
@@ -160,7 +159,7 @@ export default function RouteComp() {
 
       <div className="px-4 w-[500px] max-w-full mx-auto">
         <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-8">
-          Partners
+          合作伙伴
         </h3>
         <div className="h-8" />
         <div
@@ -170,19 +169,19 @@ export default function RouteComp() {
                         dark:bg-black/40 dark:shadow-none"
         >
           <span className="flex items-center gap-2 p-12 text-4xl text-rose-500 font-black uppercase">
-            Virtual <TbHeartHandshake /> You?
+            Virtual <TbHeartHandshake /> 您?
           </span>
           <div className="flex flex-col p-4 gap-4">
             <div>
-              We're looking for a TanStack Virtual OSS Partner to go above and
-              beyond the call of sponsorship. Are you as invested in TanStack
-              Virtual as we are? Let's push the boundaries of Virtual together!
+              我们正在寻找一个 TanStack Virtual OSS
+              合作伙伴，以超越赞助的呼吁。您是否像我们一样投入于 TanStack
+              Virtual？让我们一起推动 Virtual 的边界！
             </div>
             <a
               href="mailto:partners@tanstack.com?subject=TanStack Virtual Partnership"
               className="text-blue-500 uppercase font-black text-sm"
             >
-              Let's chat
+              一起聊聊
             </a>
           </div>
         </div>
@@ -190,7 +189,7 @@ export default function RouteComp() {
 
       <div className="relative text-lg overflow-hidden">
         <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-8">
-          Sponsors
+          赞助商
         </h3>
         <div
           className="my-4 flex flex-wrap mx-auto max-w-screen-lg"
@@ -211,7 +210,7 @@ export default function RouteComp() {
             href="https://github.com/sponsors/tannerlinsley"
             className="inline-block bg-green-500 px-4 py-2 text-xl mx-auto leading-tight font-extrabold tracking-tight text-white rounded-full"
           >
-            Become a Sponsor!
+            成为赞助商！
           </a>
         </div>
       </div>
@@ -224,20 +223,18 @@ export default function RouteComp() {
           className="text-[.7rem] bg-gray-500 bg-opacity-10 py-1 px-2 rounded text-gray-500
                 dark:bg-opacity-20"
         >
-          This ad helps us be happy about our invested time and not burn out and
-          rage-quit OSS. Yay money! 😉
+          这则广告帮助我们对投入的时间感到满足，避免精疲力竭而放弃开源项目。耶，金钱！😉
         </span>
       </div>
 
       <div className="flex flex-col gap-4">
         <div className="px-4 sm:px-6 lg:px-8  mx-auto container max-w-3xl sm:text-center">
           <h3 className="text-3xl text-center leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-2">
-            Take it for a spin!
+            试用一下！
           </h3>
           <p className="my-4 text-xl leading-7  text-gray-600">
-            With just a few divs and some inline styles, you're already well on
-            your way to creating an extremely powerful virtualization
-            experience.
+            只需几个 div
+            和一些内联样式，您就已经在创建一个非常强大的虚拟化体验的路上了。
           </p>
           <div className="flex flex-wrap gap-2 justify-center">
             {(
@@ -269,20 +266,20 @@ export default function RouteComp() {
       {['vue', 'solid', 'svelte'].includes(framework) ? (
         <div className="px-2">
           <div className="p-8 text-center text-lg w-full max-w-screen-lg mx-auto bg-black text-white rounded-xl">
-            Looking for the <strong>@tanstack/{framework}-virtual</strong>{' '}
-            example? We could use your help to build the{' '}
-            <strong>@tanstack/{framework}-virtual</strong> adapter! Join the{' '}
+            想找 <strong>@tanstack/{framework}-virtual</strong>{' '}
+            的例子？我们需要您的帮助来构建{' '}
+            <strong>@tanstack/{framework}-virtual</strong> 适配器！加入{' '}
             <a
               href="https://tlinz.com/discord"
               className="text-teal-500 font-bold"
             >
-              TanStack Discord Server
+              TanStack Discord 服务器
             </a>{' '}
-            and let's get to work!
+            让我们一起工作！
           </div>
         </div>
       ) : (
-        <div className="bg-white dark:bg-black">
+        <div className="bg-white dark:bg黑色">
           <iframe
             key={framework}
             src={`https://stackblitz.com/github/${
@@ -305,17 +302,15 @@ export default function RouteComp() {
 
       <div className="flex flex-col gap-4 items-center">
         <div className="font-extrabold text-xl lg:text-2xl">
-          Wow, you've come a long way!
+          哇，你已经走了这么远！
         </div>
-        <div className="italic font-sm opacity-70">
-          Only one thing left to do...
-        </div>
+        <div className="italic font-sm opacity-70">只剩下一件事要做了...</div>
         <div>
           <Link
             to="./docs/introduction"
             className={`inline-block py-2 px-4 bg-purple-500 rounded text-white uppercase font-extrabold`}
           >
-            Get Started!
+            开始使用！
           </Link>
         </div>
       </div>
