@@ -187,7 +187,7 @@ function LibraryRefinement() {
     <div className="overflow-x-auto scrollbar-hide">
       <div className="flex items-center gap-2 p-2 min-w-max">
         <span className="text-xs font-medium text-gray-500 dark:text-gray-400 whitespace-nowrap">
-          Libraries:
+          库：
         </span>
         <div className="flex gap-1.5">
           {items.map((item) => {
@@ -257,7 +257,7 @@ function FrameworkRefinement() {
     <div className="overflow-x-auto scrollbar-hide">
       <div className="flex items-center gap-2 p-2 min-w-max">
         <span className="text-xs font-medium text-gray-500 dark:text-gray-400 whitespace-nowrap">
-          Frameworks:
+          框架：
         </span>
         <div className="flex gap-1.5">
           {items.map((item) => {
@@ -298,9 +298,9 @@ function NoResults() {
 
   return (
     <div className="p-8 text-center text-gray-500 dark:text-gray-400">
-      <p className="text-lg font-medium">No results found</p>
+      <p className="text-lg font-medium">未找到结果</p>
       <p className="mt-2 text-sm">
-        Try adjusting your search or filters to find what you're looking for.
+        尝试调整您的搜索或过滤器以找到您要找的内容。
       </p>
     </div>
   )
@@ -424,7 +424,7 @@ export function SearchModal() {
             />
             <div className="flex justify-between items-center gap-2">
               <SearchBox
-                placeholder="Search..."
+                placeholder="搜索..."
                 classNames={{
                   root: 'w-full',
                   form: 'text-xl flex items-center gap-2 px-4',
@@ -452,10 +452,8 @@ function SearchResults({ focusedIndex }: { focusedIndex: number }) {
   if (!results.query) {
     return (
       <div className="p-8 text-center text-gray-500 dark:text-gray-400">
-        <p className="text-lg font-medium">Search TanStack</p>
-        <p className="mt-2 text-sm">
-          Start typing to search through our documentation, guides, and more.
-        </p>
+        <p className="text-lg font-medium">搜索 TanStack</p>
+        <p className="mt-2 text-sm">开始输入以搜索我们的文档、指南等内容。</p>
       </div>
     )
   }

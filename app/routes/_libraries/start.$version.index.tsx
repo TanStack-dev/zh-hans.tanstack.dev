@@ -60,7 +60,7 @@ export default function VersionIndex() {
             'leading-none whitespace-nowrap'
           )}
         >
-          STATUS: BETA
+          状态: BETA
           {/* {version === 'latest' ? latestVersion : version} */}
         </div>
         {/* </div> */}
@@ -69,47 +69,47 @@ export default function VersionIndex() {
             md:text-3xl
             lg:text-5xl lg:max-w-2xl"
         >
-          Full-stack React and Solid framework{' '}
+          全栈 React 和 Solid 框架{' '}
           <span className="underline decoration-dashed decoration-yellow-500 decoration-3 underline-offset-2">
-            powered by TanStack Router
+            由 TanStack Router 驱动
           </span>{' '}
         </h2>
         <p
           className="text opacity-90 max-w-[500px]
             lg:text-xl lg:max-w-[600px]"
         >
-          SSR, Streaming, Server Functions, API Routes, bundling and more
-          powered by <strong>TanStack Router</strong> and <strong>Vite</strong>.
-          Ready to deploy to your favorite hosting provider.
+          SSR、流式渲染、服务器函数、API 路由、打包等功能 由{' '}
+          <strong>TanStack Router</strong> 和 <strong>Vite</strong> 提供支持。
+          随时可部署到您喜欢的托管服务商。
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <Link
             to="./docs/framework/react/quick-start#impatient"
             className={`py-2 px-4 bg-transparent text-cyan-600 dark:text-cyan-400 border-2 border-cyan-500 dark:border-cyan-600 rounded uppercase font-extrabold`}
           >
-            Try it in 60 seconds
+            60 秒内试用
           </Link>
           <Link
             to="./docs/framework/react/overview"
             className={`py-2 px-4 bg-cyan-500 dark:bg-cyan-600 rounded text-white uppercase font-extrabold flex items-center`}
           >
-            Get Started
+            开始使用
           </Link>
         </div>
       </div>
       <LibraryFeatureHighlights featureHighlights={library.featureHighlights} />
       <div className="space-y-8 px-4">
         <div className="font-black text-3xl mr-1 text-center">
-          When can I use it?
+          什么时候可以使用它？
         </div>
         <div className="max-w-full p-8 w-[800px] mx-auto leading-loose space-y-4 bg-white dark:bg-black/40 rounded-xl shadow-xl shadow-black/10">
           <div>
-            You can use <strong>TanStack Start BETA</strong> today! Although
-            currently in active development, we do not expect any more breaking
-            changes. We invite you to provide feedback to help us on the journey
-            to 1.0! If you choose to ship a BETA Start app to production, we
-            recommend locking your dependencies to a specific version and
-            keeping up with the latest releases.
+            您现在就可以使用 <strong>TanStack Start BETA</strong>
+            ！虽然目前正在积极开发中，
+            但我们预计不会再有重大的破坏性更改。我们邀请您提供反馈，帮助我们迈向
+            1.0 版本！ 如果您选择将 BETA 版的 Start
+            应用部署到生产环境，我们建议您将依赖项锁定到特定版本，
+            并密切关注最新发布。
           </div>
         </div>
         <div className="grid items-center gap-2 justify-center grid-cols-2 w-[600px] max-w-full mx-auto">
@@ -117,29 +117,29 @@ export default function VersionIndex() {
             to="/start/latest/docs/framework/react/examples/start-basic"
             className={`flex items-center gap-2 py-2 px-4 bg-cyan-900 rounded text-white uppercase font-extrabold`}
           >
-            <VscPreview /> See an Example
+            <VscPreview /> 查看示例
           </Link>
           <Link
             to="/start/latest/docs/framework/react/overview"
             className={`flex items-center gap-2 py-2 px-4 bg-cyan-800 rounded text-white uppercase font-extrabold`}
           >
-            <FaBook /> Try the BETA
+            <FaBook /> 尝试 BETA 版
           </Link>
           <a
             href={`https://github.com/tanstack/tanstack.com`}
             className={`flex items-center gap-2 py-2 px-4 bg-cyan-700 rounded text-white uppercase font-extrabold`}
           >
-            <FaGithub /> TanStack.com Source
+            <FaGithub /> TanStack.com 源代码
           </a>
           <a
             href={`https://twitter.com/intent/post?text=${encodeURIComponent(
-              `TanStack Start is in BETA! It's a new full-stack React framework from @Tan_Stack and you can check it out at https://tanstack.com/start/`
+              `TanStack Start 已进入 BETA 阶段！这是来自 @Tan_Stack 的全新全栈 React 框架，您可以在 https://tanstack.com/start/ 查看`
             )}`}
             target="_blank"
             className={`flex items-center gap-2 py-2 px-4 bg-cyan-500 rounded text-white uppercase font-extrabold`}
             rel="noreferrer"
           >
-            <FaTwitter /> Tweet about it!
+            <FaTwitter /> 在推特上分享！
           </a>{' '}
         </div>
       </div>
@@ -299,7 +299,7 @@ export default function VersionIndex() {
 
       <div className="px-4 lg:max-w-screen-lg md:mx-auto mx-auto">
         <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-8">
-          Partners
+          合作伙伴
         </h3>
         <div className="h-8" />
         <div className={`grid grid-cols-1 gap-6 sm:grid-cols-2`}>
@@ -328,7 +328,7 @@ export default function VersionIndex() {
 
       <div className="relative text-lg overflow-hidden">
         <h3 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl sm:leading-10 lg:leading-none mt-8">
-          Sponsors
+          赞助商
         </h3>
         <div
           className="my-4 flex flex-wrap mx-auto max-w-screen-lg"
@@ -349,7 +349,7 @@ export default function VersionIndex() {
             href="https://github.com/sponsors/tannerlinsley"
             className="inline-block bg-green-500 px-4 py-2 text-xl mx-auto leading-tight font-extrabold tracking-tight text-white rounded-full"
           >
-            Become a Sponsor!
+            成为赞助商！
           </a>
         </div>
       </div>
@@ -432,17 +432,15 @@ export default function VersionIndex() {
 
       <div className="flex flex-col gap-4 items-center">
         <div className="font-extrabold text-xl lg:text-2xl">
-          Wow, you've come a long way!
+          哇，你已经走了这么远！
         </div>
-        <div className="italic font-sm opacity-70">
-          Only one thing left to do...
-        </div>
+        <div className="italic font-sm opacity-70">只剩下一件事要做了...</div>
         <div>
           <Link
             to="/start/latest/docs/framework/react/overview"
             className={`inline-block py-2 px-4 bg-cyan-500 rounded text-white uppercase font-extrabold`}
           >
-            Get Started!
+            开始使用！
           </Link>
         </div>
       </div>

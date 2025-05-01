@@ -182,16 +182,16 @@ const useMenuConfig = ({
   const currentFramework = useCurrentFramework(frameworks)
 
   const localMenu: MenuItem = {
-    label: 'Menu',
+    label: '菜单',
     children: [
       {
-        label: 'Home',
+        label: '首页',
         to: '..',
       },
       ...(frameworks.length > 1
         ? [
             {
-              label: 'Frameworks',
+              label: '框架',
               to: './framework',
             },
           ]
@@ -497,13 +497,15 @@ export function DocsLayout({
         >
           <div className="flex gap-4">
             <FrameworkSelect
-              label={frameworkConfig.label}
+              className="flex-[3_1_0%]"
+              label="框架"
               selected={frameworkConfig.selected}
               available={frameworkConfig.available}
               onSelect={frameworkConfig.onSelect}
             />
             <FrameworkSelect
-              label={versionConfig.label}
+              className="flex-[2_1_0%]"
+              label="版本"
               selected={versionConfig.selected!}
               available={versionConfig.available}
               onSelect={versionConfig.onSelect}
@@ -532,14 +534,14 @@ export function DocsLayout({
       <div className="flex gap-2 px-4">
         <FrameworkSelect
           className="flex-[3_1_0%]"
-          label={frameworkConfig.label}
+          label="框架"
           selected={frameworkConfig.selected}
           available={frameworkConfig.available}
           onSelect={frameworkConfig.onSelect}
         />
         <FrameworkSelect
           className="flex-[2_1_0%]"
-          label={versionConfig.label}
+          label="版本"
           selected={versionConfig.selected!}
           available={versionConfig.available}
           onSelect={versionConfig.onSelect}

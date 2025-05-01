@@ -7,7 +7,7 @@ import { TbZoomQuestion } from 'react-icons/tb'
 import { RiLightbulbFlashLine } from 'react-icons/ri'
 import { twMerge } from 'tailwind-merge'
 
-const repo = 'tanstack/ranger'
+const repo = 'tanstack-dev/ranger'
 
 const textStyles = 'text-pink-600 dark:text-pink-400'
 
@@ -15,9 +15,10 @@ export const rangerProject = {
   id: 'ranger',
   name: 'TanStack Ranger',
   cardStyles: `shadow-xl shadow-pink-700/20 dark:shadow-lg dark:shadow-pink-500/30 text-pink-500 border-2 border-transparent hover:border-current`,
+  docsRoot: 'docs/zh-hans',
   to: '/ranger',
-  tagline: `Headless range and multi-range slider utilities.`,
-  description: `Headless, lightweight, and extensible primitives for building range and multi-range sliders.`,
+  tagline: `无头范围和多范围滑块工具。`,
+  description: `用于构建范围和多范围滑块的无头、轻量级和可扩展的原语。`,
   ogImage: 'https://github.com/tanstack/ranger/raw/main/media/headerv1.png',
   badge: undefined,
   bgStyle: 'bg-pink-500',
@@ -34,12 +35,12 @@ export const rangerProject = {
   menu: [
     {
       icon: <VscPreview />,
-      label: 'Examples',
+      label: '示例',
       to: '/ranger/latest/docs/framework/react/examples/basic',
     },
     {
       icon: <BiBookAlt />,
-      label: 'Docs',
+      label: '文档',
       to: '/ranger/latest/docs/overview',
     },
     {
@@ -50,7 +51,7 @@ export const rangerProject = {
   ],
   featureHighlights: [
     {
-      title: 'Typesafe & powerful, yet familiarly simple',
+      title: '类型安全且强大，但又简单易用',
       icon: (
         <RiLightbulbFlashLine
           className={twMerge('scale-125 animate-pulse', textStyles)}
@@ -58,16 +59,16 @@ export const rangerProject = {
       ),
       description: (
         <div>
-          Hooks for building range and multi-range sliders in React{' '}
+          用于在 React 中构建范围和多范围滑块的钩子{' '}
           <span className={twMerge('font-semibold', textStyles)}>
-            100% typesafe without compromising on DX
+            100% 类型安全且不影响开发体验
           </span>
-          .
+          。
         </div>
       ),
     },
     {
-      title: '"Headless" UI library',
+      title: '"无头" UI 库',
       icon: (
         <CgTimelapse
           className={twMerge('animate-spin', textStyles)}
@@ -79,26 +80,24 @@ export const rangerProject = {
       ),
       description: (
         <div>
-          Headless and extensible. Ranger doesn't render or supply any actual UI
-          elements. It's a{' '}
+          无头且可扩展。Ranger 不渲染或提供任何实际的 UI 元素。它是一个{' '}
           <span className={twMerge('font-semibold', textStyles)}>
-            utility for building your own custom-designed UI components
+            用于构建您自己的自定义设计的 UI 组件的工具
           </span>
-          .
+          。
         </div>
       ),
     },
     {
-      title: 'Extensible',
+      title: '可扩展性',
       icon: <TbZoomQuestion className={twMerge('', textStyles)} />,
       description: (
         <div>
-          Designed with maximum inversion of control in mind, Ranger is built to
-          be{' '}
+          以最大程度的控制反转为设计理念，Ranger 的构建旨在{' '}
           <span className={twMerge('font-semibold', textStyles)}>
-            easily extended and customized
+            易于扩展和自定义
           </span>{' '}
-          to fit your needs.
+          以满足您的需求。
         </div>
       ),
     },
