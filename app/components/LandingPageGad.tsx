@@ -14,22 +14,18 @@ export default function LandingPageGad() {
         >
           <div>
             <span className="font-medium italic">
-              An ad on an open source project?
+              开源项目上的广告？
             </span>{' '}
-            <span className="font-black">What is this, 1999?</span>
+            <span className="font-black">这是回到了1999年吗？</span>
           </div>
           <div>
-            <span className="font-medium italic">Please...</span> TanStack is
-            100% privately owned, with no paid products, venture capital, or
-            acquisition plans. We're a small team dedicated to creating software
-            used by millions daily. What did you expect?
+            <span className="font-medium italic">请理解...</span> TanStack 是100%私有运营的，没有付费产品、风险投资或收购计划。我们是一个小团队，致力于开发每天被数百万人使用的软件。您期望我们怎么做呢？
           </div>
           <div>
             <Link to="/ethos" className="text-gray-500 font-bold underline">
-              Check out our ethos
+              了解我们的理念
             </Link>{' '}
-            to learn more about how we plan on sticking around (and staying
-            relevant) for the long-haul.
+            来了解更多关于我们如何长期坚持（并保持相关性）的计划。
           </div>
         </div>
       </div>
