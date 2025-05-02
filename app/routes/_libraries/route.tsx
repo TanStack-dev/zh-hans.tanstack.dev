@@ -23,7 +23,8 @@ export const Route = createFileRoute('/_libraries')({
   staleTime: Infinity,
   loader: async (ctx) => {
     return {
-      sponsorsPromise: getSponsorsForSponsorPack(),
+      // sponsorsPromise: getSponsorsForSponsorPack(),
+      sponsorsPromise: Promise.resolve([]),
     }
   },
   component: LibrariesLayout,
