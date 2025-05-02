@@ -163,34 +163,34 @@ export default function CookieConsent() {
           "
         >
           <span className="text-xs">
-            We use cookies for site functionality, analytics, and ads{' '}
+            我们使用 Cookie 来支持网站功能、分析和广告
             <strong>
-              (which is a large part of how TanStack OSS remains free forever)
+              （这是 TanStack 开源软件能够永久免费的重要原因）
             </strong>
-            . See our{' '}
+            。详情请查看我们的{' '}
             <Link to="/privacy" className="underline">
-              Privacy Policy
+              隐私政策
             </Link>{' '}
-            for details.
+            。
           </span>
           <div className="flex gap-2 flex-wrap items-center text-white font-black">
             <button
               onClick={rejectAllCookies}
               className="rounded-md px-2 py-0.5 bg-rose-500 uppercase hover:bg-rose-600"
             >
-              Reject All
+              拒绝全部
             </button>
             <button
               onClick={openSettings}
               className="rounded-md px-2 py-0.5 bg-gray-500 uppercase hover:bg-gray-600"
             >
-              Customize
+              自定义
             </button>
             <button
               onClick={acceptAllCookies}
               className="rounded-md px-2 py-0.5 bg-emerald-500 uppercase hover:bg-emerald-600"
             >
-              Accept All
+              接受全部
             </button>
           </div>
         </div>
@@ -199,7 +199,7 @@ export default function CookieConsent() {
       {showSettings && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-md w-full mx-4">
-            <h3 className="text-lg font-bold mb-4">Cookie Settings</h3>
+            <h3 className="text-lg font-bold mb-4">Cookie 设置</h3>
             <div className="space-y-4">
               <label className="flex items-start gap-2">
                 <input
@@ -219,9 +219,9 @@ export default function CookieConsent() {
                   className="mt-1"
                 />
                 <div>
-                  <div>Analytics</div>
+                  <div>分析</div>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Track site usage anonymously
+                    匿名跟踪网站使用情况
                   </p>
                 </div>
               </label>
@@ -245,9 +245,9 @@ export default function CookieConsent() {
                   className="mt-1"
                 />
                 <div>
-                  <div>Advertising</div>
+                  <div>广告</div>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Show personalized ads
+                    显示个性化广告
                   </p>
                 </div>
               </label>
@@ -256,7 +256,7 @@ export default function CookieConsent() {
                   onClick={closeSettings}
                   className="bg-emerald-500 text-white px-4 py-2 rounded-md hover:bg-emerald-600"
                 >
-                  Save
+                  保存
                 </button>
               </div>
             </div>
