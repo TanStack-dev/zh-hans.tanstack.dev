@@ -15,7 +15,7 @@ import { seo } from '~/utils/seo'
 import { twMerge } from 'tailwind-merge'
 import { LibraryFeatureHighlights } from '~/components/LibraryFeatureHighlights'
 import { partners } from '~/utils/partners'
-
+import LandingPageGad from '~/components/LandingPageGad'
 export const Route = createFileRoute('/_libraries/query/$version/')({
   component: VersionIndex,
   head: () => ({
@@ -233,17 +233,7 @@ export default function VersionIndex() {
             </div>
           </div>
 
-          <div className="mx-auto max-w-[400px] flex flex-col gap-2 items-center">
-            <div className="shadow-lg rounded-lg overflow-hidden bg-white dark:bg-gray-800 dark:text-white">
-              <Carbon />
-            </div>
-            <span
-              className="text-[.7rem] bg-gray-500 bg-opacity-10 py-1 px-2 rounded text-gray-500
-                dark:bg-opacity-20"
-            >
-              这则广告帮助我们对投入的时间感到满足，避免精疲力竭而放弃开源项目。耶，金钱！😉
-            </span>
-          </div>
+          <LandingPageGad />
 
           <div className="flex flex-col gap-4">
             <div className="px-4 sm:px-6 lg:px-8  mx-auto max-w-3xl sm:text-center">
