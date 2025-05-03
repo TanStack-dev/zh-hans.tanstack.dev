@@ -1,6 +1,6 @@
 ---
 title: 宣布 TanStack Query v4 发布
-published: 7/14/2022
+published: 2022-07-14
 authors:
   - Dominik Dorfmeister
 ---
