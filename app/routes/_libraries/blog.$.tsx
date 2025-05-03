@@ -91,7 +91,7 @@ ${content}`
       <Doc
         title={title}
         content={blogContent}
-        repo={'tanstack/tanstack.com'}
+        repo={'tanstack-dev/zh-hans.tanstack.dev'}
         branch={'main'}
         filePath={filePath}
       />
