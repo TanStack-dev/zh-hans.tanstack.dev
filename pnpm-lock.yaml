@@ -54,8 +54,8 @@ importers:
         specifier: ^0.5.13
         version: 0.5.13(tailwindcss@3.4.1)
       '@tanstack-dev/components':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: 1.3.0
+        version: 1.3.0
       '@tanstack/pacer':
         specifier: ^0.2.0
         version: 0.2.0
@@ -2887,8 +2887,8 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
 
-  '@tanstack-dev/components@1.2.0':
-    resolution: {integrity: sha512-HYJ5ehrWhBydDWBw/Da1Uut2cGjp22y09E1V38jIq6Xu3N9fRuqK5iYNuPgfxrH3UsqEuBlLaLhplb0zoqemow==}
+  '@tanstack-dev/components@1.3.0':
+    resolution: {integrity: sha512-TjgoD7waj7KhQsfsWL7ya+TiXTepEd2SNwWgo+nau1BiKsesW6WXIu94t2LSSrFZo7BF0FXWd85niIi0boFU7Q==}
 
   '@tanstack/directive-functions-plugin@1.106.0':
     resolution: {integrity: sha512-eAK+8tGl+ZZimROdnuHoAc1MVKvmQWh7WTQbh531607NQAuD/7TgbTAiSBfTJYW8qeGovrSp/qq+dnhjqTy3xQ==}
@@ -10029,7 +10029,7 @@ snapshots:
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.1
 
-  '@tanstack-dev/components@1.2.0':
+  '@tanstack-dev/components@1.3.0':
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
