@@ -24,11 +24,12 @@ import { GoogleScripts } from '~/components/GoogleScripts'
 import { BackgroundAnimation } from '~/components/BackgroundAnimation'
 import { SearchProvider } from '~/contexts/SearchContext'
 import { SearchModal } from '~/components/SearchModal'
+import { getI18nLinks } from '@tanstack-dev/components'
 
 export const Route = createRootRouteWithContext<{
   queryClient: QueryClient
 }>()({
-  head: () => ({
+  head: (ctx) => ({
     meta: [
       {
         charSet: 'utf-8',
@@ -80,6 +81,9 @@ export const Route = createRootRouteWithContext<{
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap',
       },
+      ...getI18nLinks({
+        href: ctx.loaderData.href,
+      }),
     ],
     scripts: [
       // Google Tag Manager script
@@ -107,9 +111,10 @@ export const Route = createRootRouteWithContext<{
     }
   },
   staleTime: Infinity,
-  loader: async () => {
+  loader: async ({ location }) => {
     return {
       themeCookie: await getThemeCookie(),
+      href: location.href,
     }
   },
   errorComponent: (props) => {
@@ -174,7 +179,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   const themeClass = themeCookie === 'dark' ? 'dark' : ''
 
   return (
-    <html lang="zh-hans" className={themeClass}>
+    <html lang="zh-Hans" className={themeClass}>
       <head>
         {/* If the theme is set to auto, inject a tiny script to set the proper class on html based on the user preference */}
         {themeCookie === 'auto' ? (
